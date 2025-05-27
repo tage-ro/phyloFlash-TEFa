@@ -1574,7 +1574,7 @@ sub spades_run {
     my $cpus_spades = $cpus > 24 ? 24 : $cpus;
 
     my $return = run_prog_nodie("spades",
-                                "-o $libraryNAME.spades -t $cpus_spades -m 20 -k $kmer "
+                                "-o $libraryNAME.spades -t $cpus_spades -m 100 -k $kmer "
                                 . $args,
                                 $outfiles{"spades_log"}{"filename"},"&1"
                                 );
