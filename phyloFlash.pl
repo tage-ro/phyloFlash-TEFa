@@ -2241,7 +2241,7 @@ sub vsearch_best_match {
 
     if (-s $outfiles{"all_final_fasta"}{"filename"}) {
         my @vsearch_args = ("-usearch_global", $outfiles{"all_final_fasta"}{"filename"},
-                            "-id 0.7",
+                            "-id 0.8",
                             "-userout", $outfiles{"vsearch_csv"}{"filename"},
                             "-userfields query+target+id+alnlen+evalue+id3+qs+pairs+gaps+mism+ids",
                             "-threads $cpus",
